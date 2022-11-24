@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700;900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +7,7 @@
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .app {
@@ -13,6 +15,13 @@ body {
   background-size: cover;
   background-position: bottom;
   transition: 0.4 ease;
+  height: 100vh;
+  width: 100%;
+  max-width: 500px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .app.warm {
@@ -28,27 +37,28 @@ main {
 .search-box {
   width: 100%;
   margin: 0 0 75px;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 0 2rem;
 }
 
 .search-box .search-bar {
   display: block;
   width: 100%;
   padding: 15px;
-
   appearance: none;
   background: none;
   border: none;
   outline: none;
-
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.75);
   border-radius: 0px 0px 16px 16px;
   margin-top: -25px;
-
   box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
-  
   color: #313131;
   font-size: 20px;
-
   transition: 0.4s ease;
 }
 
@@ -61,16 +71,15 @@ main {
   font-size: 32px;
   font-weight: 500;
   text-align: center;
-  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+  text-shadow: 1px 1px rgba(50, 50, 70, 0.5);
 }
 
 .location-box .date {
   color: #FFF;
   font-size: 20px;
-  font-weight: 300;
-  font-style: italic;
+  font-weight: 500;
   text-align: center;
-  text-shadow: 2px 2px rgba(50, 50, 70, 0.5);
+  text-shadow: 1px 1px rgba(50, 50, 70, 0.5);
 }
 
 .weather-box {
@@ -99,5 +108,13 @@ main {
   color: #FFF;
   font-size: 48px;
   font-weight: 700;
-  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+  text-shadow: 1px 1px rgba(50, 50, 70, 0.5);
+  line-height: 1;
+}
+
+.weather-box .weather-desc {
+  color: #FFF;
+  font-size: 30px;
+  font-weight: 100;
+  text-shadow: 1px 1px rgba(50, 50, 70, 0.5);
 }
